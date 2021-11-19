@@ -1,4 +1,4 @@
-export class cuenta {
+export class Cuenta {
   name: string;
   number: string;
   type: string;

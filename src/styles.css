@@ -2,3 +2,12 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+
+body {
+  @apply bg-gradient-to-r from-red-800 via-red-400 to-red-800
+}
+
+.link{
+  @apply text-white block p-5 font-bold hover:text-red-400
+}

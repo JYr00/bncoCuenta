@@ -1,0 +1,39 @@
+<div class="container text-center bg-white bg-opacity-95 2xl:w-5/6 mx-auto mt-16 rounded-2xl overflow-hidden xl:w-4/5">
+  <div class="mx-10 pt-5">
+    <span class="text-red-900 font-bold text-xl">Detalles cuenta {{ cuenta.name }}</span>
+
+
+
+    <table class="table-fixed mx-auto my-5 w-full">
+      <thead>
+        <tr>
+          <th class="w-2/5"></th>
+          <th class="w-3/5"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-gray-400 text-right font-bold"><span>Número de cuenta:</span></td>
+          <td class="border border-gray-400 ">{{ cuenta.number }}</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-400 text-right font-bold"><span>Tipo de cuenta:</span></td>
+          <td class="border border-gray-400 ">{{ cuenta.type }}
+        </tr>
+        <tr>
+          <td class="border border-gray-400 text-right font-bold"><span>Saldo de la cuenta:</span></td>
+          <td class="border border-gray-400 ">${{ balance }}</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-400 text-right font-bold"><span>Estado:</span></td>
+          <td class="border border-gray-400 ">
+            <i *ngIf="cuenta.status == 'activa'" class="text-green-600 fa-solid fa-circle-check"></i>
+            <i *ngIf="cuenta.status == 'inactiva'" class="text-red-900 fa-solid fa-circle-xmark"></i>
+            {{ cuenta.status }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
