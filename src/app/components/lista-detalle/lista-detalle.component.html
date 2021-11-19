@@ -13,20 +13,20 @@
       </thead>
       <tbody [ngClass]="cuenta.status == 'activa' ? 'bg-green-200' : 'bg-red-200'">
         <tr class="">
-          <td class="border border-gray-400 text-right font-bold my"><span>Número de cuenta:</span></td>
-          <td class="border border-gray-400 ">{{ cuenta.number }}</td>
+          <td class="border border-gray-300 text-right font-bold my"><span>Número de cuenta:</span></td>
+          <td class="border border-gray-300 ">{{ cuenta.number }}</td>
         </tr>
         <tr class="">
-          <td class="border border-gray-400 text-right font-bold"><span>Tipo de cuenta:</span></td>
-          <td class="border border-gray-400 ">{{ cuenta.type }}
+          <td class="border border-gray-300 text-right font-bold"><span>Tipo de cuenta:</span></td>
+          <td class="border border-gray-300 ">{{ cuenta.type }}
         </tr>
         <tr class="">
-          <td class="border border-gray-400 text-right font-bold"><span>Saldo de la cuenta:</span></td>
-          <td class="border border-gray-400 ">${{ balance }}</td>
+          <td class="border border-gray-300 text-right font-bold"><span>Saldo de la cuenta:</span></td>
+          <td class="border border-gray-300 ">${{ balance }}</td>
         </tr>
         <tr class="">
-          <td class="border border-gray-400 text-right font-bold"><span>Estado:</span></td>
-          <td class="border border-gray-400 ">
+          <td class="border border-gray-300 text-right font-bold"><span>Estado:</span></td>
+          <td class="border border-gray-00 ">
             <i *ngIf="cuenta.status == 'activa'" class="text-green-600 fa-solid fa-circle-check"></i>
             <i *ngIf="cuenta.status == 'inactiva'" class="text-red-900 fa-solid fa-circle-xmark"></i>
             {{ cuenta.status }}
