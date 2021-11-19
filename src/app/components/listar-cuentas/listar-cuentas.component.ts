@@ -18,7 +18,6 @@ export class ListarCuentasComponent implements OnInit {
 
   obtenerCuentas(): void {
     this._cuentasService.getCuentas().subscribe(data => {
-      console.log(data);
       this.listaCuentas = data.accounts;
     }, err => {
       console.log(err);
