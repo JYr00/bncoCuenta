@@ -1,6 +1,6 @@
 <div class="container text-center bg-white bg-opacity-95 2xl:w-5/6 mx-auto mt-16 rounded-2xl overflow-hidden xl:w-4/5">
   <div class="mx-10 pt-5">
-    <span class="text-red-900 font-bold text-xl pb-5">Listado productos</span>
+    <span class="text-red-900 font-bold text-xl pb-5">Listado Cuentas</span>
     <table class="table-fixed mx-auto mt-3 mb-10 w-full">
       <thead>
         <tr>
@@ -10,7 +10,7 @@
       </thead>
       <tbody>
         <tr *ngFor="let cuenta of listaCuentas" class="hover:bg-blue-200">
-          <td class="border border-gray-300">{{ cuenta.name }}</td>
+          <td class="border border-gray-300 text-left">{{ cuenta.name }}</td>
           <td class="border border-gray-300">
             <a href="#" [routerLink]="['/detalle-cuenta', cuenta.number]">
               <i class="hover:text-blue-500 cursor-pointer fa-solid fa-eye"></i>
